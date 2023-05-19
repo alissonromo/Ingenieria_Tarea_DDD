@@ -1,9 +1,7 @@
 ﻿using Datos.Persistencia.Core;
 using Dominio.Core;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 
 namespace Datos.Persistencia.Repositorios
 {
@@ -31,14 +29,9 @@ namespace Datos.Persistencia.Repositorios
             return _unidadDeTrabajo.Set<Entidad>().ToList();
         }
 
-        public IEnumerable<Entidad> Buscar(Expression<Func<Entidad, bool>> predicado)
+        public Entidad Modificar(Entidad entidad)
         {
-            return _unidadDeTrabajo.Set<Entidad>().Where(predicado);
-        }
-
-        public Entidad BuscarSingleOrDefault(Expression<Func<Entidad, bool>> predicado)
-        {
-            return _unidadDeTrabajo.Set<Entidad>().Single(predicado);
+            return _unidadDeTrabajo.Set<Entidad>().Add(entidad);
         }
 
         public void Agregar(Entidad entidad)

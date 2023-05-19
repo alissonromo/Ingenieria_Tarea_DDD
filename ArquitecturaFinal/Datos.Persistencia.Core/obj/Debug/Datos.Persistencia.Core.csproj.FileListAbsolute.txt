@@ -36,8 +36,6 @@ C:\Users\Usuario\Downloads\Arquitectura-DDD-master\ArquitecturaFinal\Datos.Persi
 C:\Users\Usuario\Downloads\Arquitectura-DDD-master\ArquitecturaFinal\Datos.Persistencia.Core\bin\Debug\EntityFramework.xml
 C:\Users\Usuario\Downloads\Arquitectura-DDD-master\ArquitecturaFinal\Datos.Persistencia.Core\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Usuario\Downloads\Arquitectura-DDD-master\ArquitecturaFinal\Datos.Persistencia.Core\obj\Debug\Datos.Persistencia.Core.csproj.AssemblyReference.cache
-C:\Users\Usuario\Downloads\Arquitectura-DDD-master\ArquitecturaFinal\Datos.Persistencia.Core\obj\Debug\Datos.Persistencia.Core.Migrations.inicial.resources
-C:\Users\Usuario\Downloads\Arquitectura-DDD-master\ArquitecturaFinal\Datos.Persistencia.Core\obj\Debug\Datos.Persistencia.Core.csproj.GenerateResource.cache
 C:\Users\Usuario\Downloads\Arquitectura-DDD-master\ArquitecturaFinal\Datos.Persistencia.Core\obj\Debug\Datos.Persistencia.Core.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Downloads\Arquitectura-DDD-master\ArquitecturaFinal\Datos.Persistencia.Core\obj\Debug\Datos.Persistencia.Core.csproj.CopyComplete
 C:\Users\Usuario\Downloads\Arquitectura-DDD-master\ArquitecturaFinal\Datos.Persistencia.Core\obj\Debug\Datos.Persistencia.Core.dll

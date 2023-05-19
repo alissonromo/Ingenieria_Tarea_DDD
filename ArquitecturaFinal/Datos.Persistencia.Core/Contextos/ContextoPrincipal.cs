@@ -9,12 +9,12 @@ namespace Datos.Persistencia.Core
         public ContextoPrincipal() : base("DefaultConnection") { }
 
         //Atributo
-        IDbSet<Casa> _casa;
+        IDbSet<Habitacion> _casa;
 
         //Propiedad
-        public IDbSet<Casa> Casas
+        public IDbSet<Habitacion> Casas
         {
-            get { return _casa ?? (_casa = base.Set<Casa>()); }
+            get { return _casa ?? (_casa = base.Set<Habitacion>()); }
         }
 
         public new IDbSet<Entidad> Set<Entidad>() where Entidad : class

@@ -9,7 +9,7 @@ namespace Aplicacion.Implementacion
     {
         public void Initialize(IRegisterModules register)
         {
-            register.RegisterType<ICasaServicio, CasaServicio>();
+            register.RegisterType<IHabitacionServicio, HabitacionServicio>();
         }
     }
 }

@@ -57,7 +57,7 @@
   <ItemGroup>
     <Compile Include="init\ModuleIInit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositorios\CasaRepositorio.cs" />
+    <Compile Include="Repositorios\HabitacionRepositorio.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

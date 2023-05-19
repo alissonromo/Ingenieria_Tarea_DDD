@@ -6,7 +6,7 @@ namespace Datos.Persistencia.Core
 {
     public interface IContextoUnidadDeTrabajo : IUnidadDeTrabajo, IDisposable
     {
-        IDbSet<Casa> Casas { get; }
+        IDbSet<Habitacion> Casas { get; }
 
         IDbSet<Entidad> Set<Entidad>() where Entidad : class;
 

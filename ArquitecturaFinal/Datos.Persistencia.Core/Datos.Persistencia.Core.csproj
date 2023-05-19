@@ -52,17 +52,7 @@
   <ItemGroup>
     <Compile Include="Contextos\ContextoPrincipal.cs" />
     <Compile Include="Contratos\IContextoUnidadDeTrabajo.cs" />
-    <Compile Include="Migrations\201705071654540_inicial.cs" />
-    <Compile Include="Migrations\201705071654540_inicial.Designer.cs">
-      <DependentUpon>201705071654540_inicial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201705071654540_inicial.resx">
-      <DependentUpon>201705071654540_inicial.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Dominio.Core\Dominio.Core.csproj">

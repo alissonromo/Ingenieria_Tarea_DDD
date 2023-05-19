@@ -11,7 +11,7 @@ namespace Datos.Persistencia.Implementacion.init
         public void Initialize(IRegisterModules register)
         {
             register.RegisterType<IContextoUnidadDeTrabajo, ContextoPrincipal>();
-            register.RegisterType<ICasaRepositorio, CasaRepositorio>();
+            register.RegisterType<IHabitacionRepositorio, HabitacionRepositorio>();
         }
     }
 }

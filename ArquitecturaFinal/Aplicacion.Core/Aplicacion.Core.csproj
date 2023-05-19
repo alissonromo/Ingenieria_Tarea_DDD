@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\CasaDTO.cs" />
+    <Compile Include="Clases\HabitacionDTO.cs" />
     <Compile Include="Mapper\MapperProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -44,7 +44,7 @@
   <ItemGroup>
     <Compile Include="Agregados\IRepositorioBase.cs" />
     <Compile Include="Agregados\IUnidadDeTrabajo.cs" />
-    <Compile Include="Clases\Casa.cs" />
+    <Compile Include="Clases\Habitacion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

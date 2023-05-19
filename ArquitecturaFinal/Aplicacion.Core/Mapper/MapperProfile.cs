@@ -7,8 +7,7 @@ namespace Aplicacion.Core
     {
         public MapperProfile()
         {
-            CreateMap<Casa, CasaDTO>();
-            CreateMap<CasaDTO, Casa>();
+            CreateMap<Habitacion, HabitacionDTO>();
         }
     }
 }

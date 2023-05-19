@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq.Expressions;
 
 namespace Dominio.Core
 {
@@ -8,13 +7,11 @@ namespace Dominio.Core
     {
         IUnidadDeTrabajo UnidadDeTrabajo { get; }
 
-        Entidad Obtener(int id); //Select * FROM Casa WHERE CasaID = id
+        Entidad Obtener(int id); 
 
         IEnumerable<Entidad> ObtenerTodas();
 
-        IEnumerable<Entidad> Buscar(Expression<Func<Entidad, bool>> predicado);
-
-        Entidad BuscarSingleOrDefault(Expression<Func<Entidad, bool>> predicado);
+        Entidad Modificar(Entidad entidad);
 
         void Agregar(Entidad entidad);
 
