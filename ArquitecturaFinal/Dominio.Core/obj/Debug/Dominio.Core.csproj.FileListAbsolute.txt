@@ -13,3 +13,9 @@ C:\Users\Usuario\Downloads\Arquitectura-DDD-master\ArquitecturaFinal\Dominio.Cor
 C:\Users\Usuario\Downloads\Arquitectura-DDD-master\ArquitecturaFinal\Dominio.Core\obj\Debug\Dominio.Core.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Downloads\Arquitectura-DDD-master\ArquitecturaFinal\Dominio.Core\obj\Debug\Dominio.Core.dll
 C:\Users\Usuario\Downloads\Arquitectura-DDD-master\ArquitecturaFinal\Dominio.Core\obj\Debug\Dominio.Core.pdb
+C:\Users\Usuario\Desktop\REPOSITORIOS\Ingenieria_Tarea_DDD\ArquitecturaFinal\Dominio.Core\bin\Debug\Dominio.Core.dll
+C:\Users\Usuario\Desktop\REPOSITORIOS\Ingenieria_Tarea_DDD\ArquitecturaFinal\Dominio.Core\bin\Debug\Dominio.Core.pdb
+C:\Users\Usuario\Desktop\REPOSITORIOS\Ingenieria_Tarea_DDD\ArquitecturaFinal\Dominio.Core\obj\Debug\Dominio.Core.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\REPOSITORIOS\Ingenieria_Tarea_DDD\ArquitecturaFinal\Dominio.Core\obj\Debug\Dominio.Core.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\REPOSITORIOS\Ingenieria_Tarea_DDD\ArquitecturaFinal\Dominio.Core\obj\Debug\Dominio.Core.dll
+C:\Users\Usuario\Desktop\REPOSITORIOS\Ingenieria_Tarea_DDD\ArquitecturaFinal\Dominio.Core\obj\Debug\Dominio.Core.pdb

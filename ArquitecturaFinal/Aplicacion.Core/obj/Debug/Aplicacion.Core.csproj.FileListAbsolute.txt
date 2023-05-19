@@ -27,3 +27,14 @@ C:\Users\Usuario\Downloads\Arquitectura-DDD-master\ArquitecturaFinal\Aplicacion.
 C:\Users\Usuario\Downloads\Arquitectura-DDD-master\ArquitecturaFinal\Aplicacion.Core\obj\Debug\Aplicacion.Core.csproj.CopyComplete
 C:\Users\Usuario\Downloads\Arquitectura-DDD-master\ArquitecturaFinal\Aplicacion.Core\obj\Debug\Aplicacion.Core.dll
 C:\Users\Usuario\Downloads\Arquitectura-DDD-master\ArquitecturaFinal\Aplicacion.Core\obj\Debug\Aplicacion.Core.pdb
+C:\Users\Usuario\Desktop\REPOSITORIOS\Ingenieria_Tarea_DDD\ArquitecturaFinal\Aplicacion.Core\bin\Debug\Aplicacion.Core.dll
+C:\Users\Usuario\Desktop\REPOSITORIOS\Ingenieria_Tarea_DDD\ArquitecturaFinal\Aplicacion.Core\bin\Debug\Aplicacion.Core.pdb
+C:\Users\Usuario\Desktop\REPOSITORIOS\Ingenieria_Tarea_DDD\ArquitecturaFinal\Aplicacion.Core\bin\Debug\AutoMapper.dll
+C:\Users\Usuario\Desktop\REPOSITORIOS\Ingenieria_Tarea_DDD\ArquitecturaFinal\Aplicacion.Core\bin\Debug\Dominio.Core.dll
+C:\Users\Usuario\Desktop\REPOSITORIOS\Ingenieria_Tarea_DDD\ArquitecturaFinal\Aplicacion.Core\bin\Debug\Dominio.Core.pdb
+C:\Users\Usuario\Desktop\REPOSITORIOS\Ingenieria_Tarea_DDD\ArquitecturaFinal\Aplicacion.Core\bin\Debug\AutoMapper.xml
+C:\Users\Usuario\Desktop\REPOSITORIOS\Ingenieria_Tarea_DDD\ArquitecturaFinal\Aplicacion.Core\obj\Debug\Aplicacion.Core.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\REPOSITORIOS\Ingenieria_Tarea_DDD\ArquitecturaFinal\Aplicacion.Core\obj\Debug\Aplicacion.Core.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\REPOSITORIOS\Ingenieria_Tarea_DDD\ArquitecturaFinal\Aplicacion.Core\obj\Debug\Aplicacion.Core.csproj.CopyComplete
+C:\Users\Usuario\Desktop\REPOSITORIOS\Ingenieria_Tarea_DDD\ArquitecturaFinal\Aplicacion.Core\obj\Debug\Aplicacion.Core.dll
+C:\Users\Usuario\Desktop\REPOSITORIOS\Ingenieria_Tarea_DDD\ArquitecturaFinal\Aplicacion.Core\obj\Debug\Aplicacion.Core.pdb

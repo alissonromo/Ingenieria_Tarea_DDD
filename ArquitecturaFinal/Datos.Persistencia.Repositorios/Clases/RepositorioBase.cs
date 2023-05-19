@@ -29,24 +29,27 @@ namespace Datos.Persistencia.Repositorios
             return _unidadDeTrabajo.Set<Entidad>().ToList();
         }
 
-        public Entidad Modificar(Entidad entidad)
+        public void Modificar(Entidad entidad)
         {
-            return _unidadDeTrabajo.Set<Entidad>().Add(entidad);
-        }
-
-        public void Agregar(Entidad entidad)
-        {
-            _unidadDeTrabajo.Set<Entidad>().Add(entidad);
-        }
-
-        public void Eliminar(Entidad entidad)
-        {
-            _unidadDeTrabajo.Set<Entidad>().Remove(entidad);
+           // return _unidadDeTrabajo.Set<Entidad>().Add(entidad);
+            _unidadDeTrabajo.Completar();
         }
 
         public void Dispose()
         {
             _unidadDeTrabajo.Dispose();
+        }
+
+        public string Eliminar(Entidad entidad)
+        {
+            _unidadDeTrabajo.Set<Entidad>().Remove(entidad);
+            return "true";
+        }
+
+        string IRepositorioBase<Entidad>.Agregar(Entidad entidad)
+        {
+            _unidadDeTrabajo.Set<Entidad>().Add(entidad);
+            return "true";
         }
     }
 }

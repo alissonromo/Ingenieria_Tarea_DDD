@@ -12,8 +12,8 @@ namespace Aplicacion.Contratos
 
         bool Modificar(HabitacionDTO entidad);
 
-        bool Agregar(HabitacionDTO entidad);
+        string Agregar(HabitacionDTO entidad);
 
-        bool Eliminar(HabitacionDTO entidad);
+        string Eliminar(HabitacionDTO entidad);
     }
 }

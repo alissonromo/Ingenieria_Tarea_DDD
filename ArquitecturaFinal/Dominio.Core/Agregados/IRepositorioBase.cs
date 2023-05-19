@@ -11,10 +11,10 @@ namespace Dominio.Core
 
         IEnumerable<Entidad> ObtenerTodas();
 
-        Entidad Modificar(Entidad entidad);
+        void Modificar(Entidad entidad);
 
-        void Agregar(Entidad entidad);
+        string Agregar(Entidad entidad);
 
-        void Eliminar(Entidad entidad);
+        string Eliminar(Entidad entidad);
     }
 }

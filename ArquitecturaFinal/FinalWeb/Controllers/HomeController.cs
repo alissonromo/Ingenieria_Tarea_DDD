@@ -10,7 +10,7 @@ namespace FinalWeb.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "Habitacion");
         }
 
         public ActionResult About()
