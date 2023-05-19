@@ -38,8 +38,6 @@ namespace FinalWeb.Controllers
                 habitacion.Numero = numero;
                 habitacion.Descripcion = form["descripcion"];
                 habitacion.NumeroHabitacion = numeroHabitacion;
-                // var habitacion = _casaHabitacion.Obtener(id);
-
                 _casaHabitacion.Agregar(habitacion);
                 return RedirectToAction("Index");
             }

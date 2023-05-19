@@ -4,134 +4,146 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2 style="margin-block:3%">Habitaciones Disponibles</h2>
 
 
 
 @using (Html.BeginForm("Create", "Habitacion", FormMethod.Post))
 {
-    <div>
-        <input type="text" id="numero" name="numero" placeholder="Numero">
-        <input type="text" id="descripcion" name="Descripcion" placeholder="Descripcion">
-        <input type="text" name="Numerohabitacion" placeholder="Numero de habitacion">
-        <button type="submit">Agregar</button>
-    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="col-lg-3">
+                <input type="number" id="numero" name="numero" placeholder="Numero">
+            </div>
+            <div class="col-lg-3">
+                <input type="text" id="descripcion" name="Descripcion" placeholder="Descripcion">
+            </div>
+            <div class="col-lg-3">
+                <input type="number" name="Numerohabitacion" placeholder="Numero de habitacion">
+            </div>
+            <div class="col-lg-3">
+                <button class="btn btn btn-default" type="submit">Agregar</button>
+            </div>
+        </div>
+        </div>
 }
 
 
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.HabitacionID)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Numero)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Descripcion)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.NumeroHabitacion)
-        </th>
-        <th></th>
-    </tr>
+        <table class="table table-bordered" style="margin-top:3%">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.HabitacionID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Numero)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Descripcion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NumeroHabitacion)
+                </th>
+                <th>
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.HabitacionID)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Numero)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Descripcion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NumeroHabitacion)
-            </td>
+                </th>
+                <th>
 
-            <td>
-                <button type="submit" onclick="test(@item.HabitacionID)">Editar</button>
+                </th>
+            </tr>
 
-
-
-
-                <form method="post" action="@Url.Action("Delete", "Habitacion", new { id = item.HabitacionID })">
-                    <button type="submit">Eliminar</button>
-                </form>
-            </td>
-        </tr>
-    }
-
-    
-
-
-</table>
-
-<script>
-    
-    function editar(numeroId) {
-        Swal.fire({
-            title: 'Ingrese los valores',
-            html:
-                '<input id="numero" class="swal2-input" placeholder="Número">' +
-                '<input id="descripcion" class="swal2-input" placeholder="Descripción">' +
-                '<input id="numeroHabitacion" class="swal2-input" placeholder="Número de habitación">',
-            showCancelButton: true,
-            confirmButtonText: 'Agregar',
-            cancelButtonText: 'Cancelar',
-            preConfirm: () => {
-                const numero = Swal.getPopup().querySelector('#numero').value;
-                const descripcion = Swal.getPopup().querySelector('#descripcion').value;
-                const numeroHabitacion = Swal.getPopup().querySelector('#numeroHabitacion').value;
-                return { numero: numero, descripcion: descripcion, numeroHabitacion: numeroHabitacion };
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HabitacionID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Numero)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Descripcion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NumeroHabitacion)
+                    </td>
+                    <td>
+                        <button class="btn btn btn-success" type="submit" onclick="editar(@item.HabitacionID)">Editar</button>
+                    </td>
+                    <td>
+                        <form  method="post" action="@Url.Action("Delete", "Habitacion", new { id = item.HabitacionID })">
+                            <button class="btn btn btn-danger" type="submit">Eliminar</button>
+                        </form>
+                    </td>
+                </tr>
             }
-        }).then((result) => {
-            if (result.isConfirmed) {
-                const numero = result.value.numero;
-                const descripcion = result.value.descripcion;
-                const numeroHabitacion = result.value.numeroHabitacion;
-
-                var form = document.createElement("form");
-                form.setAttribute("method", "post");
-                form.setAttribute("action", "/Habitacion/Edit");
-
-                var inputId = document.createElement("input");
-                inputId.setAttribute("type", "hidden");
-                inputId.setAttribute("name", "numeroId");
-                inputId.setAttribute("value", numeroId);
-
-                var inputNumero = document.createElement("input");
-                inputNumero.setAttribute("type", "hidden");
-                inputNumero.setAttribute("name", "numero");
-                inputNumero.setAttribute("value", numero);
-
-                var inputDescripcion = document.createElement("input");
-                inputDescripcion.setAttribute("type", "hidden");
-                inputDescripcion.setAttribute("name", "Descripcion");
-                inputDescripcion.setAttribute("value", descripcion);
-
-                var inputNumeroHabitacion = document.createElement("input");
-                inputNumeroHabitacion.setAttribute("type", "hidden");
-                inputNumeroHabitacion.setAttribute("name", "Numerohabitacion");
-                inputNumeroHabitacion.setAttribute("value", numeroHabitacion);
 
 
-                form.appendChild(inputNumero);
-                form.appendChild(inputId);
-                form.appendChild(inputDescripcion);
-                form.appendChild(inputNumeroHabitacion);
 
 
-                document.body.appendChild(form);
-                form.submit();
+        </table>
+
+        <script>
+
+            function editar(numeroId) {
+                Swal.fire({
+                    title: 'Ingrese los valores',
+                    html:
+                        '<input id="numero" class="swal2-input" placeholder="Número" >' +
+                        '<input id="descripcion" class="swal2-input" placeholder="Descripción" >' +
+                        '<input id="numeroHabitacion" class="swal2-input" placeholder="Número de habitación">',
+                    showCancelButton: true,
+                    confirmButtonText: 'Agregar',
+                    cancelButtonText: 'Cancelar',
+                    preConfirm: () => {
+                        const numero = Swal.getPopup().querySelector('#numero').value;
+                        const descripcion = Swal.getPopup().querySelector('#descripcion').value;
+                        const numeroHabitacion = Swal.getPopup().querySelector('#numeroHabitacion').value;
+                        return { numero: numero, descripcion: descripcion, numeroHabitacion: numeroHabitacion };
+                    }
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        const numero = result.value.numero;
+                        const descripcion = result.value.descripcion;
+                        const numeroHabitacion = result.value.numeroHabitacion;
+
+                        var form = document.createElement("form");
+                        form.setAttribute("method", "post");
+                        form.setAttribute("action", "/Habitacion/Edit");
+
+                        var inputId = document.createElement("input");
+                        inputId.setAttribute("type", "hidden");
+                        inputId.setAttribute("name", "numeroId");
+                        inputId.setAttribute("value", numeroId);
+
+                        var inputNumero = document.createElement("input");
+                        inputNumero.setAttribute("type", "hidden");
+                        inputNumero.setAttribute("name", "numero");
+                        inputNumero.setAttribute("value", numero);
+
+                        var inputDescripcion = document.createElement("input");
+                        inputDescripcion.setAttribute("type", "hidden");
+                        inputDescripcion.setAttribute("name", "Descripcion");
+                        inputDescripcion.setAttribute("value", descripcion);
+
+                        var inputNumeroHabitacion = document.createElement("input");
+                        inputNumeroHabitacion.setAttribute("type", "hidden");
+                        inputNumeroHabitacion.setAttribute("name", "Numerohabitacion");
+                        inputNumeroHabitacion.setAttribute("value", numeroHabitacion);
+
+
+                        form.appendChild(inputNumero);
+                        form.appendChild(inputId);
+                        form.appendChild(inputDescripcion);
+                        form.appendChild(inputNumeroHabitacion);
+
+
+                        document.body.appendChild(form);
+                        form.submit();
+                    }
+                });
             }
-        });
-    }
 
 
-    
-</script>
+
+        </script>
 

@@ -2,7 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Dominio.Core",
-    "\\Dominio.Core\\Clases"
+    "\\Dominio.Core\\Clases",
+    "\\FinalWeb",
+    "\\FinalWeb\\Views",
+    "\\FinalWeb\\Views\\Shared"
   ],
   "SelectedNode": "\\ArquitecturaFinal.sln",
   "PreviewInSolutionExplorer": false
